@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				<section class="solution">
+					<div class="container__solution container">
+						<div class="solution__body">
+							<h1 class="solution__title">Finance and Consultancy Solution</h1>
+							<div class="solution__text">We know how large objects will act, but things on a small scale.</div>
+							<div class="solution__buttons">
+								<button class="solution__button">Get Quote Now</button>
+								<a href="#" class="solution__button solution__button_link">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="solution__image _ibg"><img src="img/solution/solution.jpg" alt=""></div>
+				</section>
+				<section class="services">
+					<div class="services__container container">
+						<div class="services__column">
+							<div class="services__item">
+								<div class="services__icon"><img src="img/services/01.svg" alt="иконка"></div>
+								<div class="services__title">Environmental Consulting</div>
+								<div class="services__text">We focus on ergonomics and meeting you where you work. </div>
+							</div>
+						</div>
+						<div class="services__column">
+							<div class="services__item">
+								<div class="services__icon"><img src="img/services/02.svg" alt="иконка"></div>
+								<div class="services__title">Finance and consultancy </div>
+								<div class="services__text">Just type what's on your mind and we'll get you there.</div>
+							</div>
+						</div>
+						<div class="services__column">
+							<div class="services__item services__item_green">
+								<div class="services__icon"><img src="img/services/03.svg" alt="иконка"></div>
+								<div class="services__title">Financial Services Consulting</div>
+								<div class="services__text">the quick fox jumps over the lazy dog</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/footer.html',{})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html> 

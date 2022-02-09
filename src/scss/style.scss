@@ -1,0 +1,280 @@
+@import "fonts";
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Montserrat';
+	font-size: 10px;
+  }
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	padding: 0 1.3rem;
+	max-width: 107.2rem;
+	margin: 0 auto;
+}
+
+._ibg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 1071.98px) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.container {
+		max-width: none;
+	}
+}
+
+@media (max-width: 479.98px) {
+	.container {
+		
+	}
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	&__container {
+		display: flex;
+		min-height: 10.4rem;
+		align-items: center;
+	}
+	&__logo {
+		flex: 0 1 22.5rem;
+	}
+	&__image {
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 1.33;
+		letter-spacing: 0.01rem;
+		color: #252B42;
+	}
+	&__menu {
+		flex: 0 1 auto;
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item:not(:last-child) {
+		margin: 0 2.1rem 0 0;
+	}
+	&__link {
+		font-weight: 600;
+		font-size: 1.4rem;
+		line-height: 1.71;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+}
+
+@media (max-width: 479.98px) {
+	.menu__item:not(:last-child) {
+		margin: 0 2.5rem 1rem 0;
+	}
+	.menu__link {
+		font-size: 1.7rem;
+	}
+}
+
+.solution {
+	padding: 18.4rem 0 19.1rem 0;
+	position: relative;
+	&__body {
+		max-width: 40.7rem;
+		position: relative;
+		z-index: 2;
+	}
+	&__title {
+		font-weight: 800;
+		font-size: 5.8rem;
+		line-height: 137%;
+		letter-spacing: 0.02rem;
+		color: #252B42;
+		margin: 0 0 3.5rem 0;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 3rem;
+		letter-spacing: 0.02rem;
+		color: #737373;
+		margin: 0 0 3.5rem 0;
+	}
+	&__button {
+		color: #fff;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 4.8rem;
+		padding: .5rem 3.6rem;
+		border-radius: 3.7rem;
+		font-weight: bold;
+		font-size: 1.4rem;
+		line-height: 200%;
+		letter-spacing: 0.02rem;
+		background: #FF7B47;
+		&:hover {
+			cursor: pointer;
+		}
+		&_link {
+			color: #0D5C63;
+			border: .1rem solid #0D5C63;
+			background: none;
+		}
+	}
+	&__buttons {
+		display: inline-flex;
+		column-gap: 1rem;
+		gap: 1rem;
+	}
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		& img {
+			object-position: right;
+		}
+	}
+}
+
+@media (max-width: 991.98px) {
+	.solution {
+		padding: 13.4rem 0 13.1rem 0;
+		&__image {
+			opacity: 0.3;
+		}
+	}
+}
+
+@media (max-width: 479.98px) {
+	.solution {
+		padding: 12.4rem 0 11.1rem 0;
+		&__title {
+			font-size: 4.3rem;
+			margin: 0 0 1rem 0;
+		}
+		&__buttons {
+			display: flex;
+			flex-direction: column;
+		}
+		&__text {
+			margin: 0 0 2rem 0;
+		}
+		&__button {
+			flex: 1 1 100%;
+		}
+	}
+}
+
+.services {
+	&__container {
+		display: flex;
+		gap: 1.5rem;
+		margin: -10.5rem auto 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+	}
+	&__item {
+		height: 100%;
+		padding: 3.5rem 4rem;
+		background: #FFFFFF;
+		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+		&_green {
+			background-color: #0D5C63;
+			color: #fff;
+		}
+	}
+	&__item > *:not(:last-child) {
+		margin: 0 0 1rem 0;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 2.4rem;
+		line-height: 133%;
+		letter-spacing: 0.01rem;
+		color: #252B42;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 142%;
+		letter-spacing: 0.02rem;
+		color: #737373;
+	}
+}
+
+.services__item_green .services__title {
+	color: #fff;
+}
+
+.services__item_green .services__text {
+	color: #fff;
+}
