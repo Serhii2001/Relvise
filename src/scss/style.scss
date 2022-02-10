@@ -11,6 +11,9 @@
 a {
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: underline;
+}
 ul,
 ol,
 li {
@@ -582,6 +585,9 @@ html, body {
 }
 
 @media (max-width: 479.98px) {
+	.clients__items {
+		justify-content: space-between;
+	}
 	.clients__item {
 		flex: 0 1 50%;
 		max-width: 14rem;
@@ -673,9 +679,6 @@ html, body {
 	.subscribe__text:not(:last-child) {
 		margin: 0 0 1rem 0;
 	}
-	.subscribe__body {
-		margin: 0 -3rem;
-	}
 	.subscribe::before {
 		display: none;
 	}
@@ -686,3 +689,102 @@ html, body {
 		padding: 2rem;
 	}
 }
+
+.get-in-touch {
+	padding: 8rem 0 17.8rem 0;
+	background: #F3F3F3;
+	&__text-block {
+		margin: 0 0 11rem 0;
+	}
+	&__items {
+		padding: 0 3.2rem;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		flex: 0 1 33.333%;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		flex-direction: column;
+		padding: 5rem 5.2rem;
+		background: #FFFFFF;
+		height: 100%;
+		&_big {
+			padding: 8rem 5.2rem;
+			background: #252B42;
+			& .get-in-touch__text {
+				color: #fff;
+			}
+			& .get-in-touch__email {
+				color: #fff;
+			}
+			& .get-in-touch__button {
+				color: #FFFFFF;
+				border: .1rem solid #fff;
+				background: #252B42;
+			}
+		}
+	}
+	&__item > *:not(:last-child){
+		margin: 0 0 1.5rem 0;
+	}
+	&__emails {
+		max-width: 22.1rem;
+	}
+	&__email {
+		display: block;
+		word-break: break-all;
+		font-weight: 600;
+		font-size: 1.4rem;
+		line-height: 24 / 14 * 100%;
+		text-align: center;
+		letter-spacing: 0.02rem;
+		color: #252B42;
+	}
+	&__text {
+		font-weight: bold;
+		font-size: 1.6rem;
+		line-height: 24 / 16 * 100%;
+		text-align: center;
+		letter-spacing: 0.01rem;
+		color: #252B42;
+	}
+	&__button {
+		border: 1px solid #FF7B47;
+		box-sizing: border-box;
+		border-radius: 5px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		min-height: 4.4rem;
+		background: #fff;
+		font-weight: 600;
+		font-size: 1.4rem;
+		line-height: 24 / 14 * 100%;
+		text-align: center;
+		letter-spacing: 0.02rem;
+		color: #FF7B47;
+		padding: 1rem 2rem;
+		transition: all 0.3s;
+		&:hover {
+			background: #FF7B47;
+			cursor: pointer;
+			color: #fff;
+			border: .1rem solid #FF7B47;
+		}
+	}
+}
+
+// @media (max-width: 1074px) {
+// 	.get-in-touch {
+// 		&__items {
+// 			flex-direction: column;
+// 		}
+// 		&__item {
+// 			flex: 1 1 auto;
+// 		}
+// 	}
+// }
