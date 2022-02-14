@@ -515,6 +515,7 @@ body {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 0;
 }
 
 .who-we-are__content {
