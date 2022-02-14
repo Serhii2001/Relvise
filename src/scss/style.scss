@@ -176,7 +176,7 @@ html, body {
 		font-size: 1.4rem;
 		line-height: 200%;
 		letter-spacing: 0.02rem;
-		background: #FF7B47;
+		background-color: #FF7B47;
 		&:hover {
 			cursor: pointer;
 			background: #e46837;
@@ -185,8 +185,10 @@ html, body {
 			color: #0D5C63;
 			border: .1rem solid #0D5C63;
 			background: none;
-			:hover {
-				background: #0D5C63;
+			&:hover {
+				background-color: #0D5C63;
+				color: #fff;
+				text-decoration: none;
 			}
 		}
 	}
@@ -253,7 +255,7 @@ html, body {
 		padding: 3.5rem 4rem;
 		background: #FFFFFF;
 		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-		&_green {
+		&_active {
 			background-color: #0D5C63;
 			color: #fff;
 		}
@@ -277,11 +279,11 @@ html, body {
 	}
 }
 
-.services__item_green .services__title {
+.services__item_active .services__title {
 	color: #fff;
 }
 
-.services__item_green .services__text {
+.services__item_active .services__text {
 	color: #fff;
 }
 @media (max-width: 991.98px) {
@@ -638,7 +640,7 @@ html, body {
 		padding: 0 2rem;
 	}
 	&__button {
-		background: #FF7B47;
+		background-color: #FF7B47;
 		border: 1px solid #E6E6E6;
 		border-radius: 0px 5px 5px 0px;
 		font-weight: normal;
@@ -652,9 +654,9 @@ html, body {
 		letter-spacing: 0.02rem;
 		color: #FFFFFF;
 		padding: 0 2.2rem;
-		:hover {
+		&:hover {
 			cursor: pointer;
-			background: #e06635 !important;
+			background-color: #dd5d2a;
 		}
 	}
 }
@@ -717,7 +719,7 @@ html, body {
 		padding: 5rem 5.2rem;
 		background: #FFFFFF;
 		height: 100%;
-		&_big {
+		&_active {
 			padding: 8rem 5.2rem;
 			background: #252B42;
 			& .get-in-touch__text {
@@ -795,7 +797,7 @@ html, body {
 			align-items: stretch;
 		}
 		&__item {
-			&_big {
+			&_active {
 				padding: 5rem 5.2rem;
 			}
 		}
@@ -832,7 +834,7 @@ html, body {
 	}
 	&__link {
 		flex: 0 1 16.2rem;
-		background: #FF7B47;
+		background-color: #FF7B47;
 		border-radius: .5rem;
 		display: flex;
 		justify-content: center;
@@ -844,8 +846,8 @@ html, body {
 		letter-spacing: 0.02rem;
 		color: #FFFFFF;
 		padding: 1.5rem 0;
-		:hover {
-			background: #802b0a;
+		&:hover {
+			background-color: #dd5d2a;
 			text-decoration: none;
 		}
 	}
@@ -959,5 +961,7 @@ html, body {
 @media (max-width: 479.98px) {
 	.item-footer {
 		flex: 0 1 33.333%;
+		padding: 0 0 0 0;
 	}
 }
+
